@@ -1,0 +1,114 @@
+/* width > 768px */
+@charset "utf-8";
+
+@media (min-width: 768px) and (max-width: 1119px) {
+  .page {
+    min-width: 768px;
+    height: 504px;
+  }
+
+  /* Cтилизация блока .header */
+
+  .header:after {
+    content: "";
+    background: #eaeaea;
+    width: 2px;
+    height: 32px;
+    position: absolute;
+    left: 11vw;
+  }
+
+  .logo {
+    flex-grow: 0.8;
+  }
+
+  .header-list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px 24px;
+    gap: 16px;
+  }
+
+  .list__item:nth-child(3),
+  .list__item:nth-child(4),
+  .list__item:nth-child(5) {
+    display: inline;
+  }
+
+  .list__item:nth-child(2) {
+    flex-grow: 1;
+  }
+
+  .list__item:nth-child(1) {
+    flex-grow: 0.1;
+  }
+
+  .list__item:nth-child(6)::after {
+    content: "";
+    background: #eaeaea;
+    margin-left: -10px;
+    width: 2px;
+    height: 32px;
+    position: absolute;
+    top: 32px;
+  }
+
+  .main {
+    width: 100%;
+    background: #f8f8f8;
+  }
+
+  .heading {
+    margin-left: 24px;
+  }
+
+  /* Стилизация секции content */
+
+  .content {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 360px;
+  }
+
+  .content__block {
+    padding: 0px;
+    flex-direction: column;
+    width: 45%;
+  }
+
+  .content__block-text {
+    display: flex;
+    flex-direction: column;
+    max-height: 160px;
+    max-width: 490px;
+    row-gap: 24px;
+    margin: 16px 16px;
+    overflow: hidden;
+  }
+
+  .content__block-text p {
+    font-family: "TTLakes-Regular";
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    color: #1b1c21;
+  }
+
+  .content__block-text p:last-child {
+    display: contents;
+  }
+
+  .content__block-image {
+    width: 45%;
+    box-sizing: border-box;
+  }
+
+  .content__block-image img {
+    border-radius: 6px;
+  }
+}
+
+/* style by kalushko_26 */
